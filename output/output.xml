@@ -35,7 +35,7 @@
 		<address>
 			<street>1600 Pennsylvania Avenue</street>
 			<city>Washington, D.C</city>
-			<zipcode>Washington, D.C</zipcode>
+			<zipcode>null</zipcode>
 		</address>
 	</person>
 </people>

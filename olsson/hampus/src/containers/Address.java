@@ -33,4 +33,18 @@ public class Address {
 		this.zipCode = zipCode;
 	}
 
+	public String generateXml(int numberOfIndents) {
+		StringBuilder stringBuilder = new StringBuilder();
+		String baseIndent = "";
+		for (int i = 0; i < numberOfIndents; i++) {
+			baseIndent += "\t";
+		}
+		stringBuilder.append(baseIndent).append("<address>\n");
+		stringBuilder.append(baseIndent).append("\t").append("<street>").append(this.street).append("</street>\n");
+		stringBuilder.append(baseIndent).append("\t").append("<city>").append(this.city).append("</city>\n");
+		stringBuilder.append(baseIndent).append("\t").append("<zipcode>").append(this.zipCode).append("</zipcode>\n");
+		stringBuilder.append(baseIndent).append("</address>\n");
+		return stringBuilder.toString();
+	}
+
 }

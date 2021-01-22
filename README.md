@@ -28,6 +28,8 @@ Which gives the following XML output:
 
 
 #Compiling
-Class files was comiled from the root directory with the following command: 
+Class files was comiled from the root directory with the following command:<br /> 
+javac ./olsson/hampus/src/*.java ./olsson/hampus/src/containers/*.java ./olsson/hampus/src/filehandling/*.java -d ./build
 
-Jar file was compiled from the build directory with the following command:
+Jar file was compiled from the build directory with the following command:<br />
+jar cfm ../application.jar ../Manifest.mf  ./olsson/hampus/src/*.class ./olsson/hampus/src/containers/*.class ./olsson/hampus/src/filehandling/*.class

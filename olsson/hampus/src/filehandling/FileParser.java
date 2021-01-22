@@ -13,7 +13,7 @@ import olsson.hampus.src.containers.Person;
 import olsson.hampus.src.containers.Phone;
 
 public class FileParser {
-    public static List<Person> ParseDataFromFile(String filepath) {
+    public static List<Person> parseDataFromFile(String filepath) {
         List<Person> persons = new ArrayList<Person>();
         try (BufferedReader myBufferedReader = new BufferedReader(new FileReader(filepath))) {
             String line;

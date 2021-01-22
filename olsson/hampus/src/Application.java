@@ -9,7 +9,7 @@ import olsson.hampus.src.filehandling.XmlFileGenerator;
 
 public class Application {
     public static void main(String[] args) {
-        List<Person> persons = FileParser.ParseDataFromFile("./resources/input.txt");
-        XmlFileGenerator.GenerateXmlFile(new People(persons), "./output/output.xml");
+        List<Person> persons = FileParser.parseDataFromFile("./resources/input.txt");
+        XmlFileGenerator.generateXmlFile(new People(persons), "./output/output.xml");
     }
 }
